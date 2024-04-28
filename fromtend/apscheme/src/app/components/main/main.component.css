@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+} 
+body {
+    background-image: url('../../../assets/hdwallpapers.jpg');
+    background-size: 100% 100%;
+   
+ } 
+  
+
+.top{
+    width: 100%;
+    
+     background-color: black; 
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#ffeba7;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    color: white;
+    padding-top: 25%;
+    /* transform: translateY(-50%); */
+    /* transform: translate(100px, 100px); */
+    text-align: center;
+    /* position: relative;
+    top:0px;*/
+    bottom: 100px;;
+    height: 1300px;
+     
+
+}
+
+.content h1{
+   
+    font-size: 70px;
+    /* margin-left: 300px; */
+
+   
+}
+
+.content p{
+    margin-top: 20px auto;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    
+    text-align: center;
+    margin: 30px 10px;
+    border-radius: 25px;
+    border: 2px solid white;
+
+    background: transparent;
+    color:white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color:white;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+    color: black;
+    background-color: white;
+}

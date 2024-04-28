@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+  <div class="top">
+    <div class="navbar">
+        <a href="#" class="logo">APSI</a>
+        <ul>
+            <li><a routerLink="/main">Home</a></li>
+            <li><a routerLink="/about">About us</a></li>
+            <li><a routerLink="/contact">Contact us</a></li>
+            <li><a routerLink="/schemeadd">Add scheme </a>
+            <li><a routerLink="">Log out</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>𝐖𝐄 𝐀𝐑𝐄 𝐅𝐑𝐎𝐌 𝐍𝐀𝐑𝐀𝐒𝐀𝐑𝐀𝐎𝐏𝐄𝐓𝐀 𝐄𝐍𝐆𝐈𝐍𝐄𝐄𝐑𝐈𝐍𝐆 𝐂𝐎𝐋𝐋𝐄𝐆𝐄 </p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="../../../assets/1.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Day 1</h2>
+        <p class="title">Student</p>
+        <p>We done survey on "AMMAVADI"</p>
+        <p>jane@example.com</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../../../assets/2.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Day 2</h2>
+        <p class="title">Student</p>
+        <p>We done survey on "Vidhya deevena"</p>
+        <p>mike@example.com</p>
+
+      </div>
+    </div>
+  </div>
+<div class="column">
+    <div class="card">
+      <img src="../../../assets/4.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Day 3</h2>
+        <p class="title">Student</p>
+        <p>We done survey on "Vahana Mithra"</p>
+        <p>mike@example.com</p>
+
+      </div>
+    </div>
+  </div>
+
+  
+<div class="column">
+    <div class="card">
+      <img src="../../../assets/5.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Day-4</h2>
+        <p class="title">Student</p>
+        <p>We done survey on "Raithu Bharosa"</p>
+        <p>mike@example.com</p>
+
+      </div>
+    </div>
+  </div>
+<div class="column">
+    <div class="card">
+      <img src="../../../assets/6.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Day-5</h2>
+        <p class="title">Student</p>
+        <p>We done survey on "Manabadi Nadu Nedu"</p>
+        <p>mike@example.com</p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../../../assets/3.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Day-6</h2>
+        <p class="title">Student</p>
+        <p>We done survey on "Arogya Sri"</p>
+        <p>john@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column" align="center">
+    <div class="card">
+      <img src="../../../assets/QR_Code.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <!-- <h2>Day-6</h2> -->
+        <p class="title">QR_Code</p>
+        <p>See Our Work</p>
+        
+      </div>
+    </div>
+  </div> 
+</div>
+
+<!-- <div class="column">
+  <div class="card">
+    <img src="../../../assets/QR_Code.jpg" alt="John" style="width:100%">
+    <div class="container">
+      <h2>Day-6</h2>
+      <p class="title">Student</p>
+      <p>We done survey on "Arogya Sri"</p>
+      <p>john@example.com</p>
+    </div>
+  </div>
+</div> -->
+<br>
+<p style= "color : white; font-size : 50px;"><b> We Thank Our Management ,principal sir, HOD sir and faculty</b><br>
+  For Helping us to complete <b>Community Service Project.</b></p>
+
+</body>
+</html>
+

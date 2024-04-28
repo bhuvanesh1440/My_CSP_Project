@@ -1,0 +1,26 @@
+<app-nav>
+    
+</app-nav>
+<div style="background-image: url(../../../assets/chatgpt2.jpg); background-size: 100% 100%;" >
+
+
+<div class="contianer" style="width: 50%; ">
+    <div class="col-md-12 text-center">
+        <h1 style="color: white;">Bhuvanesh AI BOT</h1>
+        <div *ngFor="let msg of message">
+            <div class="message" [ngClass]="{'from':msg.author==='bot',
+            'to':msg.author==='user'}">{{msg.content}}</div>
+        </div>
+    </div>
+    <div class="col-md-12 text-center">
+        <label *ngIf="message.length==0; else dialogInfo" for="nameField">your Messages</label>
+        <input [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text" class="form-control" id="chtbox">
+        <button class="btn btn-primary" (click)="sendMessage()">ask me</button>
+
+        <ng-template #dialogInfo><span [className]="'float-right'">TotalMessages:{{message.length}}
+
+            </span></ng-template>
+    </div>
+</div>
+
+</div>
